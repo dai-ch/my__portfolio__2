@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*
+** Utility
+** Header
+** Gnav
+** Footer
+** Main Common
+** Top
+*/
+/*==================================================
+
+** Utility
+==================================================*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: "Rubik", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrap, .wrap--sec {
+  max-width: 900px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.wrap--sec {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*==================================================
+
+** Header
+==================================================*/
+/*==================================================
+
+** Gnav
+==================================================*/
+.gnav {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffbe7e;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/*==================================================
+
+** Footer
+==================================================*/
+/*==================================================
+
+** Main Common
+==================================================*/
+/*==================================================
+
+** Top
+==================================================*/
+/*# sourceMappingURL=style.css.map */
