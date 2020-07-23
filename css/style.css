@@ -46,20 +46,111 @@ img {
 
 ** Header
 ==================================================*/
+.header .header-inner {
+  max-width: 1200px;
+  width: 100%;
+  background-color: pink;
+  margin: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header-logo {
+  width: 15rem;
+  height: auto;
+}
+
+.header .header-logo a {
+  display: inline-block;
+  width: 100%;
+}
+
 /*==================================================
 
 ** Gnav
 ==================================================*/
 .gnav {
-  display: none;
   width: 100vw;
   height: 100vh;
   background-color: #ffbe7e;
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 999;
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: inherit;
+  transition-property: inherit;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
+.gnav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  -webkit-transition: color 0.6s ease-out;
+  transition: color 0.6s ease-out;
+}
+
+.gnav a:hover {
+  color: #666;
+}
+
+.gnav .gnav__list {
+  position: relative;
+  top: -3rem;
+  list-style: none;
+}
+
+.gnav .gnav__item {
+  opacity: 0;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+}
+
+.gnav .gnav__item:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.gnav .gnav__item:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.gnav .gnav__item:nth-child(4) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+/*==================================================
+
+** nav-toggle
+==================================================*/
 /*==================================================
 
 ** Footer
