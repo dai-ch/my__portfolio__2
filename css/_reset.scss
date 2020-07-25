@@ -1,0 +1,194 @@
+/*==================================================
+
+** Reset
+==================================================*/
+
+/*
+** sectioning
+--------------------------------------------------*/
+/*	outline	*/
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 100%;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+p,
+blockquote,
+address,
+small,
+dt,
+dd,
+li,
+th,
+td,
+td,
+span {
+  line-height: 1.8;
+}
+div {
+  line-height: 100%;
+}
+
+/*	heading	*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+/*
+** link
+--------------------------------------------------*/
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: inherit;
+}
+
+/*
+** content
+--------------------------------------------------*/
+
+/*	text	*/
+
+p,
+blockquote {
+  margin: 0;
+}
+address {
+  font-style: normal;
+}
+
+/*	list	*/
+
+ol,
+ul,
+dl,
+dd {
+  margin: 0;
+}
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/*	table	*/
+
+table {
+  border-collapse: collapse;
+}
+caption {
+}
+th,
+td {
+  padding: 0;
+}
+th {
+  font-weight: normal;
+}
+
+/*	embed	*/
+
+img {
+  vertical-align: bottom;
+  border: 0;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/*	semantics	*/
+
+ruby,
+rt,
+mark,
+menu {
+  margin: 0;
+  padding: 0;
+}
+small {
+  font-size: 100%;
+}
+em,
+cite,
+dfn,
+i {
+  font-style: normal;
+}
+strong,
+b {
+  font-weight: normal;
+}
+ins,
+del {
+  text-decoration: none;
+}
+q {
+  quotes: none;
+}
+sup,
+sub {
+  vertical-align: baseline;
+}
+ruby,
+rt,
+mark {
+  line-height: 100%;
+}
+mark {
+  background: none;
+}
+
+/*
+** form
+--------------------------------------------------*/
+
+form {
+  margin: 0;
+}
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-size: 1.6rem;
+}
+select {
+  line-height: 100%;
+  font-weight: normal;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
