@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="80" viewBox="0 0 500 80">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 64px;
+        mix-blend-mode: color;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: Rubik;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <text id="Daisuke_sPortfolio" data-name="Daisuke’sPortfolio" class="cls-1" transform="translate(247.352 60.511) scale(0.883)"><tspan x="0">Daisuke’sPortfolio</tspan></text>
+</svg>

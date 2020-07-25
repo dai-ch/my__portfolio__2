@@ -325,14 +325,11 @@ img {
   background-color: #ffbe7e;
   -webkit-transition-property: margin-top, -webkit-transform;
   transition-property: margin-top, -webkit-transform;
-  -o-transition-property: margin-top, transform;
   transition-property: margin-top, transform;
   transition-property: margin-top, transform, -webkit-transform;
   -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
-       -o-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
 }
 
@@ -346,7 +343,6 @@ img {
 
 .is-open-gnav .header .menu-btn__bar:nth-child(1) {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
@@ -356,7 +352,6 @@ img {
 
 .is-open-gnav .header .menu-btn__bar:nth-child(3) {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   margin-top: -8px;
 }
@@ -374,14 +369,12 @@ img {
   left: -240px;
   z-index: 200;
   -webkit-transition: left ease-out 0.2s;
-  -o-transition: left ease-out 0.2s;
   transition: left ease-out 0.2s;
 }
 
 .is-open-gnav .gnav {
   left: 0;
   -webkit-transition: left ease-out 0.3s;
-  -o-transition: left ease-out 0.3s;
   transition: left ease-out 0.3s;
 }
 
@@ -402,14 +395,12 @@ img {
 .gnav .gnav__item a {
   text-decoration: none;
   -webkit-transition: color ease-out 0.1s;
-  -o-transition: color ease-out 0.1s;
   transition: color ease-out 0.1s;
 }
 
 .gnav .gnav__item a:hover {
   color: #ffbe7e;
   -webkit-transition: color ease-out 0.2s;
-  -o-transition: color ease-out 0.2s;
   transition: color ease-out 0.2s;
 }
 
@@ -448,14 +439,12 @@ img {
 .footer .footer-nav__item a {
   text-decoration: none;
   -webkit-transition: color ease-out 0.1s;
-  -o-transition: color ease-out 0.1s;
   transition: color ease-out 0.1s;
 }
 
 .footer .footer-nav__item a:hover {
   color: #ffbe7e;
   -webkit-transition: color ease-out 0.2s;
-  -o-transition: color ease-out 0.2s;
   transition: color ease-out 0.2s;
 }
 
@@ -471,4 +460,44 @@ img {
 
 ** Top
 ==================================================*/
+#top .profile .profile__main {
+  margin-top: -5.5rem;
+}
+
+#top .profile .profile__main .profile__imgbox {
+  margin: auto;
+  width: 11rem;
+  height: 11rem;
+}
+
+#top .profile .profile__main img {
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+#top .profile .profile__name {
+  font-size: 2.31rem;
+  -webkit-columns: #333333;
+          columns: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+
+#top .profile .profile__job-title {
+  font-size: 0.88em;
+  color: rgba(58, 60, 72, 0.45);
+  margin-top: 0.1em;
+  text-align: center;
+}
+
+#top .profile .profile__description {
+  margin-top: 0.5em;
+  font-size: 0.97em;
+}
+
+#top .profile__cover .profile__cover__img {
+  min-height: 18vh;
+  width: 100%;
+  background-size: cover;
+}
 /*# sourceMappingURL=style.css.map */

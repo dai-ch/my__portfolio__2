@@ -1,270 +1,284 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="apple-touch-icon-180x180.png"
+    />
+    <link rel="icon" type="image/png" href="icon-192x192.png" />
 
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon-180x180.png" />
-  <link rel="icon" type="image/png" href="icon-192x192.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Rubik:wght@400;500&display=swap"
-    rel="stylesheet" />
+    <title>Daisuke's Portfolio</title>
+  </head>
 
-  <title>Daisuke's Portfolio</title>
-</head>
-
-<body id="top">
-  <!--
+  <body id="top">
+    <!--
       HEADER
     ================================================== -->
-  <header class="header">
-    <div class="header-inner">
-      <h1 class="header-logo">
-        <a href="#"><img src="img/logo.svg" alt="Daisuke's Portfolioロゴ" /></a>
-      </h1>
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href="#"
+            ><img src="img/logo2.svg" alt="Daisuke's Portfolioロゴ"
+          /></a>
+        </h1>
 
-      <button id="menu-btn" class="menu-btn">
-        <span class="menu-btn__bar"></span>
-        <span class="menu-btn__bar"></span>
-        <span class="menu-btn__bar"></span>
-      </button>
+        <button id="menu-btn" class="menu-btn">
+          <span class="menu-btn__bar"></span>
+          <span class="menu-btn__bar"></span>
+          <span class="menu-btn__bar"></span>
+        </button>
 
-      <nav id="gnav" class="gnav">
-        <ul class="gnav__list">
-          <li class="gnav__item"><a href="#">Top</a></li>
-          <li class="gnav__item"><a href="#profile">Profile</a></li>
-          <li class="gnav__item"><a href="#skills">Skills</a></li>
-          <li class="gnav__item"><a href="#experience">Experience</a></li>
-          <li class="gnav__item"><a href="#works">Works</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!--
-      MAIN
-    ================================================== -->
-  <main class="main">
-    <!-- PROFILE -->
-    <section id="profile" class="profile">
-      <div class="profile__cover"></div>
-      <!-- /profile__cover -->
-
-      <div class="profile__main">
-        <div class="wrap">
-          <div class="profile__imgbox">
-            <img src="img/profile_img.png" alt="Daisukeのプロフィール画像" />
-          </div>
-          <p class="profile__name">Daisuke</p>
-          <p class="profile__job-title">くそコーダー</p>
-          <p class="profile__description">
-            エンジニアになりたいアラサー。PTと宅建免許もってるのに全く使っていない人。現在はWeb制作会社でPhotoshop作業員。たまにコードも書いてる。満点大笑いのコードの改良改善のためにGitaさんをMENTAに目下活動中。
-          </p>
-        </div>
-        <!-- /wrap -->
-      </div>
-      <!-- /profile__main -->
-    </section>
-    <!-- /profile -->
-
-    <!-- SKILLS -->
-    <section id="skills" class="skills">
-      <div class="wrap--sec">
-        <h2>Skills</h2>
-
-        <ul class="skills__list">
-          <li class="skills__item">
-            <figure class="skills__item__iconbox">
-              <img src="img/skills_ico_html.png" alt="HTML5のアイコン" />
-            </figure>
-            <p class="skills__item__name">HTML5</p>
-          </li>
-          <li class="skills__item">
-            <figure class="skills__item__iconbox">
-              <img src="img/skills_ico_css.png" alt="CSS3のアイコン" />
-            </figure>
-            <p class="skills__item__name">CSS3</p>
-          </li>
-          <li class="skills__item">
-            <figure class="skills__item__iconbox">
-              <img src="img/skills_ico_sass.png" alt="Sassのアイコン" />
-            </figure>
-            <p class="skills__item__name">Sass</p>
-          </li>
-          <li class="skills__item">
-            <figure class="skills__item__iconbox">
-              <img src="img/skills_ico_photoshop.png" alt="Photoshopのアイコン" />
-            </figure>
-            <p class="skills__item__name">Photoshop</p>
-          </li>
-          <li class="skills__item">
-            <figure class="skills__item__iconbox">
-              <img src="img/skills_ico_illustrator.png" alt="Illustratorのアイコン" />
-            </figure>
-            <p class="skills__item__name">Illustrator</p>
-          </li>
-          <li class="skills__item">
-            <figure class="skills__item__iconbox">
-              <img src="img/skills_ico_jquery.png" alt="jQueryのアイコン" />
-            </figure>
-            <p class="skills__item__name">jQuery</p>
-          </li>
-          <li class="skills__item">
-            <figure class="skills__item__iconbox">
-              <img src="img/skills_ico_mysql.png" alt="SQLのアイコン" />
-            </figure>
-            <p class="skills__item__name">SQL</p>
-          </li>
-          <li class="skills__item">
-            <figure class="skills__item__iconbox">
-              <img src="img/skills_ico_xd.png" alt="XDのアイコン" />
-            </figure>
-            <p class="skills__item__name">XD</p>
-          </li>
-        </ul>
-      </div>
-      <!-- /wrap -->
-    </section>
-    <!-- /skills -->
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="experience">
-      <div class="wrap--sec">
-        <h2>Experience</h2>
-
-        <div class="experience__container">
-          <div class="experience__item">
-            <div class="experience__item__inner">
-              <time class="experience__item__year">2013</time>
-              <h3 class="experience__item__job">理学療法士</h3>
-              <p class="experience__item__description">
-                東京の病院でリハビリお仕事をしておりました。チームで仕事をする楽しさを経験。今でも素敵な仕事だと思っています。
-              </p>
-            </div>
-          </div>
-
-          <div class="experience__item">
-            <div class="experience__item__inner">
-              <time class="experience__item__year">2014 - 2018</time>
-              <h3 class="experience__item__job">投資用不動産営業</h3>
-              <p class="experience__item__description">
-                新規立ち上げの会社で営業を経験。毎朝7時20分に出社し港区中心に日々営業。気合でなんとかしてました。
-              </p>
-            </div>
-          </div>
-
-          <div class="experience__item">
-            <div class="experience__item__inner">
-              <time class="experience__item__year">2018 − 2019</time>
-              <h3 class="experience__item__job">
-                不動産再生プロジェクトマネージャー
-              </h3>
-              <p class="experience__item__description">
-                収益物件の再生販売を行うチームで営業兼マネージャーとして勤務。事業計画書の作成からチームメンバーと協力業者との折衷を経験
-              </p>
-            </div>
-          </div>
-
-          <div class="experience__item">
-            <div class="experience__item__inner">
-              <time class="experience__item__year">2019 −</time>
-              <h3 class="experience__item__job">マークアップエンジニア</h3>
-              <p class="experience__item__description">
-                半リモート生活に憧れた＋不動産時代のお世話になった人や医療職の同級生と仕事をするためにプログラミングのスキルは相性が良いと判断して転職！
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- /experience__container -->
-      </div>
-      <!-- /wrap -->
-    </section>
-    <!-- /experience -->
-
-    <!-- WORKS -->
-    <section id="works" class="works">
-      <div class="wrap--sec">
-        <h2>Works</h2>
-
-        <div class="works__container">
-          <div class="works__item">
-            <a href="#">
-              <figure class="works__item__imgbox">
-                <img src="img/works_n1.png" alt="作品名" />
-              </figure>
-              <time class="works__item__year">2020</time>
-              <p class="works__item__title">
-                作品タイトルテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-            </a>
-          </div>
-
-          <div class="works__item">
-            <a href="#">
-              <figure class="works__item__imgbox">
-                <img src="img/works_n2.png" alt="作品名" />
-              </figure>
-              <time class="works__item__year">2020</time>
-              <p class="works__item__title">作品タイトル</p>
-            </a>
-          </div>
-
-          <div class="works__item">
-            <a href="#">
-              <figure class="works__item__imgbox">
-                <img src="img/works_n2.png" alt="作品名" />
-              </figure>
-              <time class="works__item__year">2020</time>
-              <p class="works__item__title">
-                作品タイトルテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-            </a>
-          </div>
-        </div>
-        <!-- /works__container -->
-      </div>
-      <!-- /wrap -->
-    </section>
-    <!-- /works -->
-  </main>
-
-  <!--
-      Footer
-    ================================================== -->
-  <footer class="footer">
-    <div class="wrap">
-      <div class="footer-left">
-        <div class="footer-logo">
-          <img src="img/logo_white.svg" alt="Daisuke's Portfolioロゴ" />
-        </div>
-
-        <p class="copyright">&copy; 2020 Daisuke</p>
-      </div>
-      <!-- footer-left -->
-
-      <div class="footer-right">
-        <nav class="footer-nav">
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item"><a href="#profile">Profile</a></li>
-            <li class="footer-nav__item"><a href="#skills">Skills</a></li>
-            <li class="footer-nav__item">
-              <a href="#experience">Experience</a>
-            </li>
-            <li class="footer-nav__item"><a href="#works">Works</a></li>
+        <nav id="gnav" class="gnav">
+          <ul class="gnav__list">
+            <li class="gnav__item"><a href="#">Top</a></li>
+            <li class="gnav__item"><a href="#profile">Profile</a></li>
+            <li class="gnav__item"><a href="#skills">Skills</a></li>
+            <li class="gnav__item"><a href="#experience">Experience</a></li>
+            <li class="gnav__item"><a href="#works">Works</a></li>
           </ul>
         </nav>
       </div>
-      <!-- /footer-right -->
-    </div>
-    <!-- /wrap -->
-  </footer>
+    </header>
 
-  <script src="js/main.js"></script>
-</body>
+    <!--
+      MAIN
+    ================================================== -->
+    <main class="main">
+      <!-- PROFILE -->
+      <section id="profile" class="profile">
+        <div class="profile__cover">
+          <img src="img/profile_cover_img.png" class="profile__cover__img" />
+        </div>
+        <!-- /profile__cover -->
 
+        <div class="profile__main">
+          <div class="wrap">
+            <div class="profile__imgbox">
+              <img src="img/profile_img.png" alt="Daisukeのプロフィール画像" />
+            </div>
+            <p class="profile__name">Daisuke</p>
+            <p class="profile__job-title">コーダー</p>
+            <p class="profile__description">
+              都心の事業用不動産に詳しい元不動産営業マン。物件の目利きが上手との定評あり。コーディング、プログラミングスキルをつけつつ不動産の仕事に繋げたいと思っている29歳。
+            </p>
+          </div>
+          <!-- /wrap -->
+        </div>
+        <!-- /profile__main -->
+      </section>
+      <!-- /profile -->
+
+      <!-- SKILLS -->
+      <section id="skills" class="skills">
+        <div class="wrap--sec">
+          <h2>Skills</h2>
+
+          <ul class="skills__list">
+            <li class="skills__item">
+              <figure class="skills__item__iconbox">
+                <img src="img/skills_ico_html.png" alt="HTML5のアイコン" />
+              </figure>
+              <p class="skills__item__name">HTML5</p>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__item__iconbox">
+                <img src="img/skills_ico_css.png" alt="CSS3のアイコン" />
+              </figure>
+              <p class="skills__item__name">CSS3</p>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__item__iconbox">
+                <img src="img/skills_ico_sass.png" alt="Sassのアイコン" />
+              </figure>
+              <p class="skills__item__name">Sass</p>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__item__iconbox">
+                <img
+                  src="img/skills_ico_photoshop.png"
+                  alt="Photoshopのアイコン"
+                />
+              </figure>
+              <p class="skills__item__name">Photoshop</p>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__item__iconbox">
+                <img
+                  src="img/skills_ico_illustrator.png"
+                  alt="Illustratorのアイコン"
+                />
+              </figure>
+              <p class="skills__item__name">Illustrator</p>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__item__iconbox">
+                <img src="img/skills_ico_jquery.png" alt="jQueryのアイコン" />
+              </figure>
+              <p class="skills__item__name">jQuery</p>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__item__iconbox">
+                <img src="img/skills_ico_mysql.png" alt="SQLのアイコン" />
+              </figure>
+              <p class="skills__item__name">SQL</p>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__item__iconbox">
+                <img src="img/skills_ico_xd.png" alt="XDのアイコン" />
+              </figure>
+              <p class="skills__item__name">XD</p>
+            </li>
+          </ul>
+        </div>
+        <!-- /wrap -->
+      </section>
+      <!-- /skills -->
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="experience">
+        <div class="wrap--sec">
+          <h2>Experience</h2>
+
+          <div class="experience__container">
+            <div class="experience__item">
+              <div class="experience__item__inner">
+                <time class="experience__item__year">2013</time>
+                <h3 class="experience__item__job">理学療法士</h3>
+                <p class="experience__item__description">
+                  東京の病院でリハビリお仕事をしておりました。同期とは今でも仲良し。
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__item">
+              <div class="experience__item__inner">
+                <time class="experience__item__year">2014 - 2018</time>
+                <h3 class="experience__item__job">投資用不動産営業</h3>
+                <p class="experience__item__description">
+                  新規立ち上げの会社で営業を経験。毎朝7時30分から朝の会議がありました。
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__item">
+              <div class="experience__item__inner">
+                <time class="experience__item__year">2018 − 2019</time>
+                <h3 class="experience__item__job">
+                  不動産再生プロジェクトマネージャー
+                </h3>
+                <p class="experience__item__description">
+                  収益不動産の再生販売を行うチームで営業兼マネージャーとして勤務。
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__item">
+              <div class="experience__item__inner">
+                <time class="experience__item__year">2019 −</time>
+                <h3 class="experience__item__job">マークアップエンジニア</h3>
+                <p class="experience__item__description">
+                  たまたま見た動画がきっかけで興味を持ち、ITのスキルは他の業界との親和性が高く仕事との幅が広がると考えて転職。
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /experience__container -->
+        </div>
+        <!-- /wrap -->
+      </section>
+      <!-- /experience -->
+
+      <!-- WORKS -->
+      <section id="works" class="works">
+        <div class="wrap--sec">
+          <h2>Works</h2>
+
+          <div class="works__container">
+            <div class="works__item">
+              <a href="#">
+                <figure class="works__item__imgbox">
+                  <img src="img/works_n1.png" alt="作品名" />
+                </figure>
+                <time class="works__item__year">2020</time>
+                <p class="works__item__title">
+                  作品タイトルテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+              </a>
+            </div>
+
+            <div class="works__item">
+              <a href="#">
+                <figure class="works__item__imgbox">
+                  <img src="img/works_n2.png" alt="作品名" />
+                </figure>
+                <time class="works__item__year">2020</time>
+                <p class="works__item__title">作品タイトル</p>
+              </a>
+            </div>
+
+            <div class="works__item">
+              <a href="#">
+                <figure class="works__item__imgbox">
+                  <img src="img/works_n2.png" alt="作品名" />
+                </figure>
+                <time class="works__item__year">2020</time>
+                <p class="works__item__title">
+                  作品タイトルテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- /works__container -->
+        </div>
+        <!-- /wrap -->
+      </section>
+      <!-- /works -->
+    </main>
+
+    <!--
+      Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="img/logo_white.svg" alt="Daisuke's Portfolioロゴ" />
+          </div>
+
+          <p class="copyright">&copy; 2020 Daisuke</p>
+        </div>
+        <!-- footer-left -->
+
+        <div class="footer-right">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a href="#profile">Profile</a></li>
+              <li class="footer-nav__item"><a href="#skills">Skills</a></li>
+              <li class="footer-nav__item">
+                <a href="#experience">Experience</a>
+              </li>
+              <li class="footer-nav__item"><a href="#works">Works</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /footer-right -->
+      </div>
+      <!-- /wrap -->
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
