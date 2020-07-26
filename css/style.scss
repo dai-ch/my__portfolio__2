@@ -39,6 +39,7 @@ img {
 
 .wrap {
   width: 100%;
+  max-width: 720px; //PCのレスポンシブするときに変更する
   padding: 0 2rem;
   margin: 0 auto;
 }
@@ -47,6 +48,12 @@ img {
   @extend .wrap;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.wrap--l {
+  @extend .wrap;
+  padding: 0;
+  max-width: 1920px;
 }
 
 /*==================================================
@@ -72,13 +79,13 @@ img {
   }
 
   .header-logo {
+    width: calc(100% - #{$header-height-sp});
     max-width: 22rem;
     //width: 25vw;
     line-height: 1;
 
     a {
       display: inline-block;
-      padding: 1rem 0.5rem;
     }
     &:hover {
       background-color: $color-white;
@@ -263,6 +270,7 @@ img {
   h3,
   h4,
   h5 {
+    line-height: 1.5;
   }
   h2 {
   }
@@ -285,49 +293,71 @@ img {
   // ** Profile
   //
   .profile {
-    .profile__main {
-      margin-top: -5.5rem;
-
-      .profile__imgbox {
-        margin: auto;
-        width: 11rem;
-        height: 11rem;
-      }
-      img {
-        border-radius: 50%;
-        border: 3px solid rgba($color-white, 1);
-      }
-    }
-
-    .profile__name {
-      font-size: 2.31rem;
-      columns: #333333;
-      font-weight: bold;
-      text-align: center;
-    }
-    .profile__job-title {
-      font-size: 0.88em;
-      color: $color-job-title;
-      margin-top: 0.1em;
-      text-align: center;
-    }
-    .profile__description {
-      margin-top: 0.5em;
-      font-size: 0.97em;
-    }
   }
 
   .profile__cover {
-    .profile__cover__img {
-      min-height: 18vh;
+    width: 100%;
+    height: 40vw;
+    max-height: 280px;
+
+    img {
       width: 100%;
-      background-size: cover;
+      height: 100%;
+      object-fit: cover;
     }
+  }
+
+  .profile__main {
+    max-width: 450px;
+    margin: -55px auto 0;
+  }
+
+  .profile__imgbox {
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+
+    img {
+      border-radius: 50%;
+      border: 3px solid rgba($color-white, 1);
+    }
+  }
+
+  .profile__name {
+    margin-top: 0.5em;
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .profile__job-title {
+    margin-top: 0.1em;
+    color: $color-job-title;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .profile__description {
+    margin-top: 1em;
   }
 
   //////////////////////////////////////////////////
   // ** Skills
   //
   .skills {
+  }
+
+  .skills__list {
+
+  }
+
+  .skills__item {
+
+  }
+
+  .skills__item__iconbox {
+
   }
 }
