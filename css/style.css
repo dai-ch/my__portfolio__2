@@ -717,7 +717,7 @@ img {
 
 #top .works__item {
   width: calc(100% - 20px);
-  max-width: 500px;
+  max-width: 400px;
   margin-top: 16px;
 }
 
