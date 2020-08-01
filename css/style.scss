@@ -500,14 +500,56 @@ img {
   // ** Works
   //
   .works {
-
+    background-color: $color-bg;
+    .wrap--sec {
+      padding-top: 36.8px;
+      padding-bottom: 28.8px;
+    }
   }
 
   .works__container {
-
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .works__item {
+    width: calc(100% - 20px);
+    max-width: 500px;
+    margin-top: 16px;
 
+    & a {
+      text-decoration: none;
+    }
+  }
+  .works__item:first-child {
+    margin-top: 0;
+  }
+  .works__item__year {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: $color-gray;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+
+    &::before {
+      content: ".";
+      position: relative;
+      margin-left: 2px;
+      width: 10px;
+      height: 10px;
+      color: $color-bg;
+      background-image: url(../img/clock.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .works__item__title {
+    font-size: 13px;
+    line-height: 1.6;
   }
 }

@@ -1,13 +1,15 @@
 //////////////////////////////////////////////////
 // ** Variables
 //
-$font-main: 'Rubik', 'Noto Sans JP', "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-main: "Rubik", "Noto Sans JP", "Hiragino Kaku Gothic Pro",
+  "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue",
+  Helvetica, Arial, sans-serif;
 
 $color-main: #ffbe7e;
 $color-white: #fff;
 $color-lightBlue: #3863d8;
 $color-black: #3a3c48;
-$color-gray: rgba(darken($color-main, 60%), 0.08);
+$color-gray: rgba(darken($color-main, 60%), 0.5);
 
 $color-txt: $color-black;
 $color-bg: #fcf2e9;
