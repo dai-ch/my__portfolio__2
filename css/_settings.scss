@@ -5,14 +5,14 @@ $font-main: 'Rubik', 'Noto Sans JP', "Hiragino Kaku Gothic Pro", "ヒラギノ�
 
 $color-main: #ffbe7e;
 $color-white: #fff;
-$color-black: #333;
-$color-lightBlue: rgb(56, 99, 216);
-$color-job-title:rgba(58,60,72,0.45);
+$color-lightBlue: #3863d8;
+$color-black: #3a3c48;
 $color-gray: rgba(darken($color-main, 60%), 0.08);
 
 $color-txt: $color-black;
-$color-bg: rgb(252, 242, 233);
+$color-bg: #fcf2e9;
 $color-border: $color-gray;
+$color-job-title: rgba($color-black, 0.45);
 
 $header-height-sp: 64px;
 $gnav-width-sp: 240px;

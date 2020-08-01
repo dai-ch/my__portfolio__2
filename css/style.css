@@ -224,7 +224,7 @@ fieldset {
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  color: #333;
+  color: #3a3c48;
   font-family: "Rubik", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   position: relative;
@@ -332,11 +332,14 @@ img {
   background-color: #ffbe7e;
   -webkit-transition-property: margin-top, -webkit-transform;
   transition-property: margin-top, -webkit-transform;
+  -o-transition-property: margin-top, transform;
   transition-property: margin-top, transform;
   transition-property: margin-top, transform, -webkit-transform;
   -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
 }
 
@@ -350,6 +353,7 @@ img {
 
 .is-open-gnav .header .menu-btn__bar:nth-child(1) {
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
@@ -359,6 +363,7 @@ img {
 
 .is-open-gnav .header .menu-btn__bar:nth-child(3) {
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   margin-top: -8px;
 }
@@ -376,12 +381,14 @@ img {
   left: -240px;
   z-index: 200;
   -webkit-transition: left ease-out 0.2s;
+  -o-transition: left ease-out 0.2s;
   transition: left ease-out 0.2s;
 }
 
 .is-open-gnav .gnav {
   left: 0;
   -webkit-transition: left ease-out 0.3s;
+  -o-transition: left ease-out 0.3s;
   transition: left ease-out 0.3s;
 }
 
@@ -402,12 +409,14 @@ img {
 .gnav .gnav__item a {
   text-decoration: none;
   -webkit-transition: color ease-out 0.1s;
+  -o-transition: color ease-out 0.1s;
   transition: color ease-out 0.1s;
 }
 
 .gnav .gnav__item a:hover {
   color: #ffbe7e;
   -webkit-transition: color ease-out 0.2s;
+  -o-transition: color ease-out 0.2s;
   transition: color ease-out 0.2s;
 }
 
@@ -417,7 +426,7 @@ img {
 ==================================================*/
 .footer {
   padding: 4rem 0;
-  background-color: #333;
+  background-color: #3a3c48;
 }
 
 .footer .footer-logo {
@@ -446,12 +455,14 @@ img {
 .footer .footer-nav__item a {
   text-decoration: none;
   -webkit-transition: color ease-out 0.1s;
+  -o-transition: color ease-out 0.1s;
   transition: color ease-out 0.1s;
 }
 
 .footer .footer-nav__item a:hover {
   color: #ffbe7e;
   -webkit-transition: color ease-out 0.2s;
+  -o-transition: color ease-out 0.2s;
   transition: color ease-out 0.2s;
 }
 
@@ -603,8 +614,8 @@ img {
 
 #top .experience__container {
   position: relative;
-  margin: 1.6rem 0 5.6rem;
-  padding: 0.8rem 0;
+  margin: 16px 0 0;
+  padding: 8px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,8 +630,8 @@ img {
   width: 3px;
   height: 100%;
   background: #ffbe7e;
-  left: 9px;
   top: -16px;
+  left: 9px;
 }
 
 #top .experience__line::after, #top .experience__line::before {
@@ -629,46 +640,45 @@ img {
   content: "";
   background-color: #ffbe7e;
   border-radius: 50%;
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 23px;
+  height: 23px;
 }
 
 #top .experience__line::before {
-  border: 3px solid #fcf2e9;
-  left: -10px;
+  border: 3px solid #ffddbb;
   top: 0;
+  left: -10px;
 }
 
 #top .experience__line::after {
   top: 100%;
   left: -4px;
-  width: 1.1rem;
-  height: 1.1rem;
-  border: 0;
+  width: 11px;
+  height: 11px;
 }
 
 #top .experience__item {
   position: relative;
-  width: 88%;
-  margin: 1.7rem 0 1.7rem auto !important;
+  width: calc(100% - 45px);
+  margin: 17px 0 17px auto;
 }
 
 #top .experience__item__inner {
   background-color: #fff;
-  padding: 1.6rem 2.4rem;
+  padding: 1em 1.5em;
   border-radius: 4px 4px 6px 6px;
   border-top: 5px solid #ffbe7e;
 }
 
 #top .experience__item__inner::before {
-  width: 2.5rem;
+  width: 25px;
   height: 3px;
   position: absolute;
   content: "";
   display: block;
-  top: 3rem;
+  top: 30px;
   right: auto;
-  left: -3.4rem !important;
+  left: -34px;
   background-color: #ffbe7e;
 }
 
@@ -679,14 +689,14 @@ img {
 }
 
 #top .experience__item__job {
-  font-weight: bold;
-  font-size: 1.92rem;
+  font-weight: 700;
+  font-size: 1.9rem;
   margin: 0.38rem 0;
   line-height: 1.7;
 }
 
 #top .experience__item__description {
   color: rgba(58, 60, 72, 0.45);
-  font-size: 1.47rem;
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=style.css.map */

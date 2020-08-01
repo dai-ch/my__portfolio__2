@@ -35,3 +35,55 @@
   window.addEventListener('resize', fetchWindowWidth);
   items.forEach(item => item.addEventListener('click', closeGnav));
 })();
+
+/*==================================================
+
+** スムーズスクロール
+==================================================*/
+(function () {
+  const aHashes = document.querySelectorAll('a[href^="#"]');
+  const header = document.querySelector('#header');
+	const duration = 300;
+	let headerHeight;
+
+	let Ease = {
+		easeInOut: t => t < .5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
+  };
+
+  function fetchHeaderHeight() {
+    headerHeight = header.getBoundingClientRect().height;
+    return headerHeight;
+  }
+
+	function move(event) {
+		const currentY = document.documentElement.scrollTop || document.body.scrollTop;
+		const targetID = event.target.hash.replace(/#/, '');
+		const target = document.getElementById(targetID);
+
+		if (target) {
+			event.preventDefault();
+			event.stopPropagation();
+
+			const targetY = window.pageYOffset + target.getBoundingClientRect().top - headerHeight;
+			const startTime = performance.now();
+
+			const loop = (nowTime) => {
+				const time = nowTime - startTime;
+				const normalizedTime = time / duration;
+
+				if (normalizedTime < 1) {
+					window.scrollTo(0, currentY + ((targetY - currentY) * Ease.easeInOut(normalizedTime)));
+					requestAnimationFrame(loop);
+				} else {
+					window.scrollTo(0, targetY);
+				}
+			};
+
+			requestAnimationFrame(loop);
+		}
+	}
+
+  window.addEventListener('load', fetchHeaderHeight);
+  window.addEventListener('resize', fetchHeaderHeight);
+	aHashes.forEach(a => a.addEventListener('click', { event: a.target, handleEvent: move }, false));
+})();
