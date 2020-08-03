@@ -1,15 +1,18 @@
 //////////////////////////////////////////////////
 // ** Variables
 //
+
+// Fonts
 $font-main: "Rubik", "Noto Sans JP", "Hiragino Kaku Gothic Pro",
   "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue",
   Helvetica, Arial, sans-serif;
 
+// Colors
 $color-main: #ffbe7e;
 $color-white: #fff;
 $color-lightBlue: #3863d8;
 $color-black: #3a3c48;
-$color-gray: rgba(darken($color-main, 60%), 0.5);
+$color-gray: rgba(darken($color-main, 60%), 0.08);
 
 $color-txt: $color-black;
 $color-bg: #fcf2e9;
@@ -19,6 +22,31 @@ $color-job-title: rgba($color-black, 0.45);
 $header-height-sp: 64px;
 $gnav-width-sp: 240px;
 
+// Breakpoints
+$breakpoints: (
+	'xxs': '375px',
+	'xs': '576px',
+	'sm': '768px',
+	'md': '1024px',
+	'lg': '1280px',
+	'xl': '1920px'
+) !default;
+
 //////////////////////////////////////////////////
 // ** Mixin
 //
+@mixin media($type, $bp1, $bp2:0) {
+	@if ($type == min) {
+		@media screen and (min-width: #{map-get($breakpoints, $bp1)}) {
+			@content;
+		}
+	} @else if ($type == max) {
+		@media screen and (max-width: #{map-get($breakpoints, $bp1)}) {
+			@content;
+		}
+	} @else if ($type == between) {
+		@media screen and (min-width: #{map-get($breakpoints, $bp1)}) and (max-width: #{map-get($breakpoints, $bp2)}) {
+			@content;
+		}
+	}
+}

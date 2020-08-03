@@ -72,7 +72,7 @@ img {
   .header-inner {
     display: flex;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1920px;
     width: 100%;
     height: 100%;
     padding: 0 20px;
@@ -81,7 +81,7 @@ img {
 
   .header-logo {
     width: calc(100% - #{$header-height-sp});
-    max-width: 22rem;
+    max-width: 220px;
     //width: 25vw;
     line-height: 1;
 
@@ -144,6 +144,10 @@ img {
   }
 }
 
+@include media(min, md) {
+
+} //md
+
 /*==================================================
 
 ** Gnav
@@ -166,7 +170,7 @@ img {
   .gnav__list {
     width: 100%;
     height: 100%;
-    padding-top: 10px;
+    padding-top: 1rem;
   }
 
   .gnav__item {
@@ -187,6 +191,10 @@ img {
     }
   }
 }
+
+@include media(min, md) {
+
+} //md
 
 /*==================================================
 
@@ -236,6 +244,10 @@ img {
   }
 }
 
+@include media(min, sm) {
+
+} //sm
+
 /*==================================================
 
 ** Main Common
@@ -281,7 +293,7 @@ img {
     text-align: center;
 
     + * {
-      margin-top: 1.9rem;
+      margin-top: 2.4rem;
     }
   }
   h3 {
@@ -293,6 +305,14 @@ img {
   h6 {
   }
 }
+
+@include media(min, sm) {
+
+} //sm
+
+@include media(min, md) {
+
+} //md
 
 /*==================================================
 
@@ -415,7 +435,6 @@ img {
 
   .experience__container {
     position: relative;
-    margin: 16px 0 0;
     padding: 8px 0;
     display: flex;
     flex-direction: column;
@@ -502,13 +521,11 @@ img {
   .works {
     background-color: $color-bg;
     .wrap--sec {
-      padding-top: 36.8px;
-      padding-bottom: 28.8px;
+      padding-top: 0;
     }
   }
 
   .works__container {
-    margin-top: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -518,32 +535,58 @@ img {
   .works__item {
     width: calc(100% - 20px);
     max-width: 400px;
-    margin-top: 16px;
+    margin-top: 2rem;
 
-    & a {
+    a {
       text-decoration: none;
     }
-  }
-  .works__item:first-child {
-    margin-top: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
-  .far {
-    font-size: 14px;
-    color: $color-gray;
+  .works__item__imgbox {
+    box-shadow: 0 20px 35px -10px rgba($color-black,0.15);
+    transition: box-shadow ease-out 0.3s;
+
+    &:hover {
+      box-shadow: 0 20px 35px -10px rgba($color-black,0.2);
+    }
   }
 
   .works__item__year {
     display: inline-block;
-    margin-top: 15px;
-    font-size: 14px;
-    color: $color-gray;
+    margin-top: 1em;
+    font-size: 1.4rem;
+    color: rgba(darken($color-main, 60%), 0.5);
     letter-spacing: 0.05em;
     line-height: 1.4;
+
+    &::before {
+      content: "\f017";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 400;
+      margin-right: 0.2em;
+    }
   }
 
   .works__item__title {
-    font-size: 13px;
+    margin-top: 0.25em;
+    font-size: 1.4rem;
     line-height: 1.6;
+    transition: color ease-out 0.1s;
+
+    &:hover {
+      color: $color-main;
+    }
   }
 }
+
+@include media(min, sm) {
+
+} //sm
+
+@include media(min, md) {
+
+} //md
