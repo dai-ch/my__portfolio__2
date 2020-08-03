@@ -238,7 +238,7 @@ img {
 
 .wrap, .wrap--sec, .wrap--l {
   width: 100%;
-  max-width: 720px;
+  max-width: 900px;
   padding: 0 2rem;
   margin: 0 auto;
 }
