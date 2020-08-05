@@ -332,11 +332,14 @@ img {
   background-color: #ffbe7e;
   -webkit-transition-property: margin-top, -webkit-transform;
   transition-property: margin-top, -webkit-transform;
+  -o-transition-property: margin-top, transform;
   transition-property: margin-top, transform;
   transition-property: margin-top, transform, -webkit-transform;
   -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
 }
 
@@ -350,6 +353,7 @@ img {
 
 .is-open-gnav .header .menu-btn__bar:nth-child(1) {
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
@@ -359,6 +363,7 @@ img {
 
 .is-open-gnav .header .menu-btn__bar:nth-child(3) {
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   margin-top: -8px;
 }
@@ -388,12 +393,14 @@ img {
   left: -240px;
   z-index: 200;
   -webkit-transition: left ease-out 0.2s;
+  -o-transition: left ease-out 0.2s;
   transition: left ease-out 0.2s;
 }
 
 .is-open-gnav .gnav {
   left: 0;
   -webkit-transition: left ease-out 0.3s;
+  -o-transition: left ease-out 0.3s;
   transition: left ease-out 0.3s;
 }
 
@@ -405,21 +412,24 @@ img {
 
 .gnav .gnav__item {
   width: 100%;
-  padding: 0.8em 1em;
   font-size: 1.6rem;
   font-weight: 500;
   border-bottom: solid 2px rgba(75, 37, 0, 0.08);
 }
 
 .gnav .gnav__item a {
+  display: block;
+  padding: 0.8em 1em;
   text-decoration: none;
   -webkit-transition: color ease-out 0.1s;
+  -o-transition: color ease-out 0.1s;
   transition: color ease-out 0.1s;
 }
 
 .gnav .gnav__item a:hover {
   color: #ffbe7e;
   -webkit-transition: color ease-out 0.2s;
+  -o-transition: color ease-out 0.2s;
   transition: color ease-out 0.2s;
 }
 
@@ -428,10 +438,10 @@ img {
     position: static;
     background-color: transparent;
     max-width: 700px;
-    width: 60%;
+    width: auto;
     height: auto;
   }
-  .gnav__list {
+  .gnav .gnav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -440,11 +450,15 @@ img {
     text-align: center;
     padding: 0;
   }
-  .gnav__item {
-    border: hidden !important;
+  .gnav .gnav__item {
+    border: hidden;
   }
-  .gnav__item a {
-    display: block;
+  .gnav .gnav__item a {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .gnav .gnav__item + .gnav__item {
+    margin-left: 2.5em;
   }
 }
 
@@ -458,8 +472,7 @@ img {
 }
 
 .footer .footer-logo {
-  width: 80%;
-  max-width: 200px;
+  max-width: 220px;
 }
 
 .footer .copyright {
@@ -483,30 +496,32 @@ img {
 .footer .footer-nav__item a {
   text-decoration: none;
   -webkit-transition: color ease-out 0.1s;
+  -o-transition: color ease-out 0.1s;
   transition: color ease-out 0.1s;
 }
 
 .footer .footer-nav__item a:hover {
   color: #ffbe7e;
   -webkit-transition: color ease-out 0.2s;
+  -o-transition: color ease-out 0.2s;
   transition: color ease-out 0.2s;
 }
 
 @media screen and (min-width: 768px) {
-  .footer .wrap, .footer .wrap--sec, .footer .wrap--l {
+  .footer .footer-inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: calc((100% / 2) - 1rem);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .footer .footer-logo {
-    width: 100%;
+    max-width: 250px;
+    margin-top: 0.25rem;
+  }
+  .footer .footer-right {
+    margin-top: 0;
   }
 }
 
@@ -786,6 +801,7 @@ img {
           box-shadow: 0 20px 35px -10px rgba(58, 60, 72, 0.15);
   -webkit-transition: -webkit-box-shadow ease-out 0.3s;
   transition: -webkit-box-shadow ease-out 0.3s;
+  -o-transition: box-shadow ease-out 0.3s;
   transition: box-shadow ease-out 0.3s;
   transition: box-shadow ease-out 0.3s, -webkit-box-shadow ease-out 0.3s;
 }
@@ -816,6 +832,7 @@ img {
   font-size: 1.4rem;
   line-height: 1.6;
   -webkit-transition: color ease-out 0.1s;
+  -o-transition: color ease-out 0.1s;
   transition: color ease-out 0.1s;
 }
 
