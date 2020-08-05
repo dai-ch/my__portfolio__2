@@ -286,7 +286,6 @@ img {
     }
 
     .footer-left {
-
     }
 
     .footer-logo {
@@ -472,6 +471,25 @@ img {
     border-top: solid 1px $color-bg;
   }
 
+  @include media(min, sm) {
+    .skills {
+      .skills__list {
+        align-content: space-around;
+      }
+      .skills__item {
+        width: calc((100% / 3) - 3rem);
+      }
+    }
+  } //sm
+
+  @include media(min, md) {
+    .skills {
+      .skills__item {
+        width: calc((100% / 4) - 2rem);
+      }
+    }
+  } //md
+
   //////////////////////////////////////////////////
   // ** Experience
   //
@@ -635,24 +653,20 @@ img {
 
 @include media(min, sm) {
   #top {
-
     //////////////////////////////////////////////////
     // ** Skills
     //
     .skills {
-
     }
   }
 } //sm
 
 @include media(min, md) {
   #top {
-
     //////////////////////////////////////////////////
     // ** Skills
     //
     .skills {
-
     }
   }
 } //md
