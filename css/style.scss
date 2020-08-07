@@ -435,13 +435,19 @@ img {
   .skills__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-right: -2.5%;
+    margin-left: -2.5%;
   }
 
   .skills__item {
-    width: 47%;
+    width: calc(100% / 2);
+    padding-right: 2.5%;
+    padding-bottom: 5%;
+    padding-left: 2.5%;
+  }
+
+  .skills__item__inner {
     border-radius: 7px;
-    margin: 0 0 1.7em 0;
     font-size: 1.4rem;
     background-color: $color-white;
     text-align: center;
@@ -470,25 +476,6 @@ img {
     font-weight: 500;
     border-top: solid 1px $color-bg;
   }
-
-  @include media(min, sm) {
-    .skills {
-      .skills__list {
-        align-content: space-around;
-      }
-      .skills__item {
-        width: calc((100% / 3) - 3rem);
-      }
-    }
-  } //sm
-
-  @include media(min, md) {
-    .skills {
-      .skills__item {
-        width: calc((100% / 4) - 2rem);
-      }
-    }
-  } //md
 
   //////////////////////////////////////////////////
   // ** Experience
@@ -651,22 +638,55 @@ img {
   }
 }
 
+@include media(min, xs) {
+  #top {
+    //////////////////////////////////////////////////
+    // ** Skills - Tab
+    //
+    .skills {
+    }
+    .skills__list {
+      margin-right: -2%;
+      margin-left: -2%;
+    }
+    .skills__item {
+      width: calc(100% / 3);
+      padding-right: 2%;
+      padding-bottom: 4%;
+      padding-left: 2%;
+    }
+
+    //////////////////////////////////////////////////
+    // ** Works - Tab
+    //
+    .works {
+    }
+  }
+
+} //xs
+
 @include media(min, sm) {
   #top {
     //////////////////////////////////////////////////
-    // ** Skills
+    // ** Skills - PC
     //
     .skills {
+    }
+    .skills__list {
+      margin-right: -1.5%;
+      margin-left: -1.5%;
+    }
+    .skills__item {
+      width: calc(100% / 4);
+      padding-right: 1.5%;
+      padding-bottom: 3%;
+      padding-left: 1.5%;
+    }
+
+    //////////////////////////////////////////////////
+    // ** Works - PC
+    //
+    .works {
     }
   }
 } //sm
-
-@include media(min, md) {
-  #top {
-    //////////////////////////////////////////////////
-    // ** Skills
-    //
-    .skills {
-    }
-  }
-} //md
