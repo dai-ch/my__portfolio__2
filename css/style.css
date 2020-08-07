@@ -481,6 +481,12 @@ img {
   font-size: 1.2rem;
 }
 
+.footer .resume-design {
+  padding-top: 2em;
+  color: rgba(255, 255, 255, 0.51);
+  font-size: 1rem;
+}
+
 .footer .footer-right {
   margin-top: 3rem;
 }
@@ -515,6 +521,18 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .footer .footer-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .resume-design {
+    margin-top: auto;
   }
   .footer .footer-logo {
     max-width: 250px;
