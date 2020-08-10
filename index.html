@@ -1,338 +1,415 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="apple-touch-icon-180x180.png"
+    />
+    <link rel="icon" type="image/png" href="icon-192x192.png" />
 
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon-180x180.png" />
-  <link rel="icon" type="image/png" href="icon-192x192.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/colorbox.css" />
+    <!-- color-box CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/colorbox.css" />
-  <!-- color-box CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Rubik:wght@400;500&display=swap"
-    rel="stylesheet" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
 
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+    <title>Daisuke's Portfolio</title>
+  </head>
 
-  <title>Daisuke's Portfolio</title>
-</head>
-
-<body id="top">
-  <!--
+  <body id="top">
+    <!--
       HEADER
     ================================================== -->
-  <header id="header" class="header">
-    <div class="header-inner">
-      <h1 class="header-logo">
-        <a href="#"><img src="img/logo.svg" alt="Daisuke's Portfolioロゴ" /></a>
-      </h1>
+    <header id="header" class="header">
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href="#"
+            ><img src="img/logo.svg" alt="Daisuke's Portfolioロゴ"
+          /></a>
+        </h1>
 
-      <button id="menu-btn" class="menu-btn">
-        <span class="menu-btn__bar"></span>
-        <span class="menu-btn__bar"></span>
-        <span class="menu-btn__bar"></span>
-      </button>
+        <button id="menu-btn" class="menu-btn">
+          <span class="menu-btn__bar"></span>
+          <span class="menu-btn__bar"></span>
+          <span class="menu-btn__bar"></span>
+        </button>
 
-      <nav id="gnav" class="gnav">
-        <ul class="gnav__list">
-          <li class="gnav__item"><a href="#">Top</a></li>
-          <li class="gnav__item"><a href="#profile">Profile</a></li>
-          <li class="gnav__item"><a href="#skills">Skills</a></li>
-          <li class="gnav__item"><a href="#experience">Experience</a></li>
-          <li class="gnav__item"><a href="#works">Works</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!--
-      MAIN
-    ================================================== -->
-  <main class="main">
-    <!-- PROFILE -->
-    <section id="profile" class="profile">
-      <div class="profile__cover wrap--l">
-        <img src="img/profile_cover_img.png" alt="" />
-      </div>
-      <!-- /profile__cover -->
-
-      <div class="profile__main">
-        <div class="wrap">
-          <div class="profile__imgbox">
-            <img src="img/profile_img.png" alt="Daisukeのプロフィール画像" />
-          </div>
-          <p class="profile__name">Daisuke</p>
-          <p class="profile__job-title">コーダー</p>
-          <p class="profile__description">
-            都心の事業用不動産に詳しい元不動産営業マン。WEB制作会社でLP作成を経験。Photoshopを使ったバナー広告も作れます。現在は並行してプログラミングを学習中。
-          </p>
-        </div>
-        <!-- /wrap -->
-      </div>
-      <!-- /profile__main -->
-    </section>
-    <!-- /profile -->
-
-    <!-- SKILLS -->
-    <section id="skills" class="skills">
-      <div class="wrap--sec">
-        <h2>Skills</h2>
-
-        <ul class="skills__list">
-          <li class="skills__item">
-            <div class="skills__item__inner">
-              <figure class="skills__item__iconbox">
-                <img src="img/skills_ico_html.png" alt="HTML5のアイコン" />
-              </figure>
-              <p class="skills__item__name">HTML5</p>
-            </div>
-          </li>
-          <li class="skills__item">
-            <div class="skills__item__inner">
-              <figure class="skills__item__iconbox">
-                <img src="img/skills_ico_css.png" alt="CSS3のアイコン" />
-              </figure>
-              <p class="skills__item__name">CSS3</p>
-            </div>
-          </li>
-          <li class="skills__item">
-            <div class="skills__item__inner">
-              <figure class="skills__item__iconbox">
-                <img src="img/skills_ico_sass.png" alt="Sassのアイコン" />
-              </figure>
-              <p class="skills__item__name">Sass</p>
-            </div>
-          </li>
-          <li class="skills__item">
-            <div class="skills__item__inner">
-              <figure class="skills__item__iconbox">
-                <img src="img/skills_ico_photoshop.png" alt="Photoshopのアイコン" />
-              </figure>
-              <p class="skills__item__name">Photoshop</p>
-            </div>
-          </li>
-          <li class="skills__item">
-            <div class="skills__item__inner">
-              <figure class="skills__item__iconbox">
-                <img src="img/skills_ico_illustrator.png" alt="Illustratorのアイコン" />
-              </figure>
-              <p class="skills__item__name">Illustrator</p>
-            </div>
-          </li>
-          <li class="skills__item">
-            <div class="skills__item__inner">
-              <figure class="skills__item__iconbox">
-                <img src="img/skills_ico_jquery.png" alt="jQueryのアイコン" />
-              </figure>
-              <p class="skills__item__name">jQuery</p>
-            </div>
-          </li>
-          <li class="skills__item">
-            <div class="skills__item__inner">
-              <figure class="skills__item__iconbox">
-                <img src="img/skills_ico_mysql.png" alt="SQLのアイコン" />
-              </figure>
-              <p class="skills__item__name">SQL</p>
-            </div>
-          </li>
-          <li class="skills__item">
-            <div class="skills__item__inner">
-              <figure class="skills__item__iconbox">
-                <img src="img/skills_ico_xd.png" alt="XDのアイコン" />
-              </figure>
-              <p class="skills__item__name">XD</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- /wrap -->
-    </section>
-    <!-- /skills -->
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="experience">
-      <div class="wrap--sec">
-        <h2>Experience</h2>
-
-        <div class="experience__container">
-          <span class="experience__line"></span>
-
-          <div class="experience__item">
-            <div class="experience__item__inner">
-              <time class="experience__item__year">2013</time>
-              <h3 class="experience__item__job">理学療法士</h3>
-              <p class="experience__item__description">
-                東京の病院で怪我や病気で入院された患者様のリハビリの仕事をしておりました。
-              </p>
-            </div>
-          </div>
-
-          <div class="experience__item">
-            <div class="experience__item__inner">
-              <time class="experience__item__year">2014 - 2018</time>
-              <h3 class="experience__item__job">投資用不動産営業</h3>
-              <p class="experience__item__description">
-                新規立ち上げの会社で営業を経験。不動産のイロハを叩き込む。
-              </p>
-            </div>
-          </div>
-
-          <div class="experience__item">
-            <div class="experience__item__inner">
-              <time class="experience__item__year">2018 - 2019</time>
-              <h3 class="experience__item__job">
-                不動産再生企業
-              </h3>
-              <p class="experience__item__description">
-                収益不動産の再生を行うチームでマネージャーとして勤務。10億円規模の案件を担当。
-              </p>
-            </div>
-          </div>
-
-          <div class="experience__item">
-            <div class="experience__item__inner">
-              <time class="experience__item__year">2019 -</time>
-              <h3 class="experience__item__job">マークアップエンジニア</h3>
-              <p class="experience__item__description">
-                不動産や医療の経験を他の業界のスキルと掛け合わせて仕事がしたいと考えるようになり、IT業界に参入。
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- /experience__container -->
-      </div>
-      <!-- /wrap -->
-    </section>
-    <!-- /experience -->
-
-    <!-- WORKS -->
-
-    <section id="works" class="works">
-      <div class="wrap--sec">
-        <h2>Works</h2>
-
-        <div class="works__container">
-          <!-- <div class="works__item">
-              <a href="img/arups.png" class="single inline" title="aaa">
-                <figure class="works__item__imgbox">
-                  <img src="img/arups.png" alt="作品名" />
-                </figure>
-                <time class="works__item__year">2020</time>
-                <p class="works__item__title">
-                  アルプス設備株式会社
-                </p>
-
-                <a class="inline" href="#inline-content">
-                  ページ内に書かれたhtmlを表示します
-                </a>
-                モーダルで表示させる要素
-                <div style="display: none;">
-                  <section id="inline-content">
-                    <h3>インラインhtml</h3>
-                    <p>モーダルウィンドウでの中身</p>
-                  </section>
-                </div>
-              </a>
-            </div> -->
-
-          <div class="works__item">
-            <figure class="works__item__imgbox">
-              <a href="img/works_img_arups_l.png" class="js-colorbox-img" title="aaa">
-                <img src="img/works_img_arups_s.png" alt="作品名" />
-              </a>
-            </figure>
-            <time class="works__item__year">2020</time>
-            <p class="works__item__title"><a href="#colorbox-arpus" class="js-colorbox-text">アルプス設備株式会社</a></p>
-
-
-            <div class="works__item__content">
-              <section id="colorbox-arpus" class="works__item__content__inner">
-                <dl class="works__item__content__list">
-                  <div class="works__item__content__item">
-                    <dt class="works__item__content__title">制作期間</dt>
-                    <dd class="works__item__content__sentence">8年</dd>
-                  </div>
-                  <div class="works__item__content__item">
-                    <dt class="works__item__content__title">コンセプト</dt>
-                    <dd class="works__item__content__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-                  </div>
-                </dl>
-              </section>
-            </div>
-          </div>
-
-          <div class="works__item">
-            <a href="#">
-              <figure class="works__item__imgbox">
-                <img src="img/works_img_sunup_s.png" alt="作品名" />
-              </figure>
-              <time class="works__item__year">2020</time>
-              <p class="works__item__title">サナップ株式会社</p>
-            </a>
-          </div>
-
-          <div class="works__item">
-            <a href="#">
-              <figure class="works__item__imgbox">
-                <img src="img/works_n1.png" alt="作品名" />
-              </figure>
-              <time class="works__item__year">2020</time>
-              <p class="works__item__title">
-                coming soon
-              </p>
-            </a>
-          </div>
-        </div>
-        <!-- /works__container -->
-      </div>
-      <!-- /wrap -->
-    </section>
-    <!-- /works -->
-  </main>
-
-  <!--
-      Footer
-    ================================================== -->
-  <footer class="footer">
-    <div class="footer-inner wrap">
-      <div class="footer-left">
-        <div class="footer-logo">
-          <img src="img/logo_white.svg" alt="Daisuke's Portfolioロゴ" />
-        </div>
-
-        <p class="copyright">&copy; 2020 Daisuke</p>
-
-        <p class="resume-design">
-          このポートフォリオのデザインは、RESUME（https://www.resume.id/）を参考にさせていただきました。
-        </p>
-      </div>
-      <!-- footer-left -->
-
-      <div class="footer-right">
-        <nav class="footer-nav">
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item"><a href="#profile">Profile</a></li>
-            <li class="footer-nav__item"><a href="#skills">Skills</a></li>
-            <li class="footer-nav__item">
-              <a href="#experience">Experience</a>
-            </li>
-            <li class="footer-nav__item"><a href="#works">Works</a></li>
+        <nav id="gnav" class="gnav">
+          <ul class="gnav__list">
+            <li class="gnav__item"><a href="#">Top</a></li>
+            <li class="gnav__item"><a href="#profile">Profile</a></li>
+            <li class="gnav__item"><a href="#skills">Skills</a></li>
+            <li class="gnav__item"><a href="#experience">Experience</a></li>
+            <li class="gnav__item"><a href="#works">Works</a></li>
           </ul>
         </nav>
       </div>
-      <!-- /footer-right -->
-    </div>
-    <!-- /wrap -->
-  </footer>
+    </header>
 
-  <script src="js/jquery3.5.1.min.js"></script>
-  <script src="js/jquery.colorbox-min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <!--
+      MAIN
+    ================================================== -->
+    <main class="main">
+      <!-- PROFILE -->
+      <section id="profile" class="profile">
+        <div class="profile__cover wrap--l">
+          <img src="img/profile_cover_img.png" alt="" />
+        </div>
+        <!-- /profile__cover -->
 
+        <div class="profile__main">
+          <div class="wrap">
+            <div class="profile__imgbox">
+              <img src="img/profile_img.png" alt="Daisukeのプロフィール画像" />
+            </div>
+            <p class="profile__name">Daisuke</p>
+            <p class="profile__job-title">コーダー</p>
+            <p class="profile__description">
+              29歳からWEB業界へ。WEB制作会社でLP作成を経験。Photoshop、Illustratorでのバナー広告も作成できます。
+            </p>
+          </div>
+          <!-- /wrap -->
+        </div>
+        <!-- /profile__main -->
+      </section>
+      <!-- /profile -->
+
+      <!-- SKILLS -->
+      <section id="skills" class="skills">
+        <div class="wrap--sec">
+          <h2>Skills</h2>
+
+          <ul class="skills__list">
+            <li class="skills__item">
+              <div class="skills__item__inner">
+                <figure class="skills__item__iconbox">
+                  <img src="img/skills_ico_html.png" alt="HTML5のアイコン" />
+                </figure>
+                <p class="skills__item__name">HTML5</p>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__item__inner">
+                <figure class="skills__item__iconbox">
+                  <img src="img/skills_ico_css.png" alt="CSS3のアイコン" />
+                </figure>
+                <p class="skills__item__name">CSS3</p>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__item__inner">
+                <figure class="skills__item__iconbox">
+                  <img src="img/skills_ico_sass.png" alt="Sassのアイコン" />
+                </figure>
+                <p class="skills__item__name">Sass</p>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__item__inner">
+                <figure class="skills__item__iconbox">
+                  <img
+                    src="img/skills_ico_photoshop.png"
+                    alt="Photoshopのアイコン"
+                  />
+                </figure>
+                <p class="skills__item__name">Photoshop</p>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__item__inner">
+                <figure class="skills__item__iconbox">
+                  <img
+                    src="img/skills_ico_illustrator.png"
+                    alt="Illustratorのアイコン"
+                  />
+                </figure>
+                <p class="skills__item__name">Illustrator</p>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__item__inner">
+                <figure class="skills__item__iconbox">
+                  <img src="img/skills_ico_jquery.png" alt="jQueryのアイコン" />
+                </figure>
+                <p class="skills__item__name">jQuery</p>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__item__inner">
+                <figure class="skills__item__iconbox">
+                  <img src="img/skills_ico_mysql.png" alt="SQLのアイコン" />
+                </figure>
+                <p class="skills__item__name">SQL</p>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="skills__item__inner">
+                <figure class="skills__item__iconbox">
+                  <img src="img/skills_ico_xd.png" alt="XDのアイコン" />
+                </figure>
+                <p class="skills__item__name">XD</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- /wrap -->
+      </section>
+      <!-- /skills -->
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="experience">
+        <div class="wrap--sec">
+          <h2>Experience</h2>
+
+          <div class="experience__container">
+            <span class="experience__line"></span>
+
+            <div class="experience__item">
+              <div class="experience__item__inner">
+                <time class="experience__item__year">2013</time>
+                <h3 class="experience__item__job">理学療法士</h3>
+                <p class="experience__item__description">
+                  東京の病院で怪我や病気で入院された患者様のリハビリの仕事をしておりました。
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__item">
+              <div class="experience__item__inner">
+                <time class="experience__item__year">2014 - 2018</time>
+                <h3 class="experience__item__job">投資用不動産営業</h3>
+                <p class="experience__item__description">
+                  新規立ち上げの会社で営業を経験。不動産のイロハを叩き込む。
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__item">
+              <div class="experience__item__inner">
+                <time class="experience__item__year">2018 - 2019</time>
+                <h3 class="experience__item__job">
+                  不動産再生企業
+                </h3>
+                <p class="experience__item__description">
+                  収益不動産の再生を行うチームでマネージャーとして勤務。10億円規模の案件を担当。
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__item">
+              <div class="experience__item__inner">
+                <time class="experience__item__year">2019 -</time>
+                <h3 class="experience__item__job">マークアップエンジニア</h3>
+                <p class="experience__item__description">
+                  不動産や医療の経験を他の業界のスキルと掛け合わせて仕事がしたいと考えるようになり、IT業界に参入。
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /experience__container -->
+        </div>
+        <!-- /wrap -->
+      </section>
+      <!-- /experience -->
+
+      <!-- WORKS -->
+
+      <section id="works" class="works">
+        <div class="wrap--sec">
+          <h2>Works</h2>
+
+          <div class="works__container">
+            <div class="works__item">
+              <figure class="works__item__imgbox">
+                <a
+                  href="img/works_img_arups_l.png"
+                  class="js-colorbox-img"
+                  title="アルプス設備会社"
+                >
+                  <img src="img/works_img_arups_s.png" alt="作品名" />
+                </a>
+              </figure>
+              <time class="works__item__year">2020</time>
+              <p class="works__item__title">
+                <a href="#colorbox-arpus" class="js-colorbox-text"
+                  >アルプス設備株式会社</a
+                >
+              </p>
+
+              <div class="works__item__content">
+                <section
+                  id="colorbox-arpus"
+                  class="works__item__content__inner"
+                >
+                  <div class="works__item__content__list">
+                    <div class="works__item__content__item">
+                      <td class="works__item__content__title">制作期間：</td>
+                      <td class="works__item__content__sentence">
+                        8日
+                      </td>
+                    </div>
+                    <div class="works__item__content__item">
+                      <td class="works__item__content__title">コンセプト</td>
+                      <td class="works__item__content__sentence">
+                        ダークグレーと白を基調
+                      </td>
+                    </div>
+
+                    <div class="works__item__content__item">
+                      <td class="works__item__content__title">URL:</td>
+                      <td class="works__item__content__sentence">
+                        http://www.alps-setsubi.com/
+                      </td>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="works__item">
+              <figure class="works__item__imgbox">
+                <a
+                  href="img/works_img_sunup_l.png"
+                  class="js-colorbox-img"
+                  title="サナップ株式会社"
+                >
+                  <img src="img/works_img_sunup_s.png" alt="作品名" />
+                </a>
+              </figure>
+              <time class="works__item__year">2020</time>
+              <p class="works__item__title">
+                <a href="#colorbox-sunup" class="js-colorbox-text"
+                  >サナップ株式会社</a
+                >
+              </p>
+
+              <div class="works__item__content">
+                <section
+                  id="colorbox-sunup"
+                  class="works__item__content__inner"
+                >
+                  <dl class="works__item__content__list">
+                    <div class="works__item__content__item">
+                      <td class="works__item__content__title">
+                        制作期間：
+                      </と>
+                      <td class="works__item__content__sentence">
+                        7日
+                      </td>
+                    </div>
+
+                    <div class="works__item__content__item">
+                      <td class="works__item__content__title">
+                        コンセプト：
+                        </と>
+                      <td class="works__item__content__sentence">
+                        ベーシック
+                      </td>
+                    </div>
+
+                    <div class="works__item__content__item">
+                      <td class="works__item__content__title">URL:</td>
+                      <td class="works__item__content__sentence">
+                        http://www.alps-setsubi.com/
+                      </td>
+                    </div>
+                  </dl>
+                </section>
+              </div>
+            </div>
+
+            <div class="works__item">
+              <figure class="works__item__imgbox">
+                <!-- <a href="img/works_img_sunup_l.png" class="js-colorbox-img" title="サナップ株式会社"> -->
+                <img src="img/works_n1.png" alt="作品名" />
+                <!-- </a> -->
+              </figure>
+              <time class="works__item__year">2020</time>
+              <p class="works__item__title">
+                <!-- <a href="#colorbox-arpus" class="js-colorbox-text"
+                  ></a
+                > -->coming soon
+              </p>
+
+              <div class="works__item__content">
+                <section
+                  id="colorbox-arpus"
+                  class="works__item__content__inner"
+                >
+                  <dl class="works__item__content__list">
+                    <div class="works__item__content__item">
+                      <dt class="works__item__content__title">制作期間</dt>
+                      <dd class="works__item__content__sentence">8年</dd>
+                    </div>
+                    <div class="works__item__content__item">
+                      <dt class="works__item__content__title">コンセプト</dt>
+                      <dd class="works__item__content__sentence">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </dd>
+                    </div>
+                  </dl>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- /works__container -->
+        </div>
+        <!-- /wrap -->
+      </section>
+      <!-- /works -->
+    </main>
+
+    <!--
+      Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="footer-inner wrap">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="img/logo_white.svg" alt="Daisuke's Portfolioロゴ" />
+          </div>
+
+          <p class="copyright">&copy; 2020 Daisuke</p>
+
+          <p class="resume-design">
+            このポートフォリオのデザインは、RESUME（https://www.resume.id/）を参考にさせていただきました。
+          </p>
+        </div>
+        <!-- footer-left -->
+
+        <div class="footer-right">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a href="#profile">Profile</a></li>
+              <li class="footer-nav__item"><a href="#skills">Skills</a></li>
+              <li class="footer-nav__item">
+                <a href="#experience">Experience</a>
+              </li>
+              <li class="footer-nav__item"><a href="#works">Works</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /footer-right -->
+      </div>
+      <!-- /wrap -->
+    </footer>
+
+    <script src="js/jquery3.5.1.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

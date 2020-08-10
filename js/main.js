@@ -102,7 +102,7 @@
 
 ** Colorbox
 ==================================================*/
-jQuery(function($) {
+jQuery(function ($) {
   $(".js-colorbox-img").colorbox({
     maxWidth: "80%",
     maxHeight: "80%",
@@ -110,7 +110,7 @@ jQuery(function($) {
   });
 });
 
-jQuery(function($) {
+jQuery(function ($) {
   $(".js-colorbox-text").colorbox({
     inline: true,
     maxWidth: "80%",
@@ -118,3 +118,4 @@ jQuery(function($) {
     opacity: 0.7,
   });
 });
+
