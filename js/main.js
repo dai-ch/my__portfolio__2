@@ -64,7 +64,9 @@
 
     if (target) {
       event.preventDefault();
-      event.stopPropagation();
+
+      // Colobox inlineHTMLのために削除
+      // event.stopPropagation();
 
       const targetY =
         window.pageYOffset + target.getBoundingClientRect().top - headerHeight;
@@ -95,3 +97,24 @@
     a.addEventListener("click", { event: a.target, handleEvent: move }, false)
   );
 })();
+
+/*==================================================
+
+** Colorbox
+==================================================*/
+jQuery(function($) {
+  $(".js-colorbox-img").colorbox({
+    maxWidth: "80%",
+    maxHeight: "80%",
+    opacity: 0.7,
+  });
+});
+
+jQuery(function($) {
+  $(".js-colorbox-text").colorbox({
+    inline: true,
+    maxWidth: "80%",
+    maxHeight: "80%",
+    opacity: 0.7,
+  });
+});

@@ -112,7 +112,7 @@
 }
 
 #cboxLoadingGraphic {
-    background: url(img/loading.gif) no-repeat center center;
+    background: url(../img/ico_colorbox_loading.gif) no-repeat center center;
 }
 
 #cboxLoadingOverlay {
@@ -145,7 +145,7 @@
     height: 20px;
     position: absolute;
     top: -20px;
-    background: url(img/controls.png) no-repeat 0 0;
+    background: url(../img/ico_colorbox_controls.png) no-repeat 0 0;
 }
 
 /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
