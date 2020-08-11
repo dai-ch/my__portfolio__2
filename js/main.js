@@ -107,14 +107,15 @@ jQuery(function ($) {
     maxWidth: "80%",
     maxHeight: "80%",
     opacity: 0.7,
+    inline: true,
   });
 });
 
-jQuery(function ($) {
-  $(".js-colorbox-text").colorbox({
-    inline: true,
-    maxWidth: "80%",
-    maxHeight: "80%",
-    opacity: 0.7,
-  });
-});
+// $(function () {
+//   $(".inline").colorbox({
+//     inline: true,
+//     maxWidth: "90%",
+//     maxHeight: "90%",
+//     opacity: 0.7
+//   });
+// });
