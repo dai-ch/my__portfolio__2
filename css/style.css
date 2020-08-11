@@ -673,15 +673,15 @@ img {
   border-top: solid 1px #fcf2e9;
 }
 
-#top .experience {
+#top .history {
   background-color: #fcf2e9;
 }
 
-#top .experience .wrap--sec {
+#top .history .wrap--sec {
   padding-top: 0;
 }
 
-#top .experience__container {
+#top .history__container {
   position: relative;
   padding: 8px 0;
   display: -webkit-box;
@@ -693,7 +693,7 @@ img {
           flex-direction: column;
 }
 
-#top .experience__line {
+#top .history__line {
   position: absolute;
   width: 3px;
   height: 100%;
@@ -702,7 +702,7 @@ img {
   left: 9px;
 }
 
-#top .experience__line::after, #top .experience__line::before {
+#top .history__line::after, #top .history__line::before {
   display: block;
   position: absolute;
   content: "";
@@ -712,33 +712,33 @@ img {
   height: 23px;
 }
 
-#top .experience__line::before {
+#top .history__line::before {
   border: 3px solid #ffddbb;
   top: 0;
   left: -10px;
 }
 
-#top .experience__line::after {
+#top .history__line::after {
   top: 100%;
   left: -4px;
   width: 11px;
   height: 11px;
 }
 
-#top .experience__item {
+#top .history__item {
   position: relative;
   width: calc(100% - 45px);
   margin: 17px 0 17px auto;
 }
 
-#top .experience__item__inner {
+#top .history__item__inner {
   background-color: #fff;
   padding: 1em 1.5em;
   border-radius: 4px 4px 6px 6px;
   border-top: 5px solid #ffbe7e;
 }
 
-#top .experience__item__inner::before {
+#top .history__item__inner::before {
   width: 25px;
   height: 3px;
   position: absolute;
@@ -750,20 +750,20 @@ img {
   background-color: #ffbe7e;
 }
 
-#top .experience__item__year {
+#top .history__item__year {
   font-weight: 500;
   font-size: 87%;
   color: #ffbe7e;
 }
 
-#top .experience__item__job {
+#top .history__item__job {
   font-weight: 700;
   font-size: 1.9rem;
   margin: 0.38rem 0;
   line-height: 1.7;
 }
 
-#top .experience__item__description {
+#top .history__item__description {
   color: rgba(58, 60, 72, 0.45);
   font-size: 1.4rem;
 }
