@@ -110,11 +110,11 @@ jQuery(function ($) {
   });
 });
 
-// jQuery(function ($) {
-//   $(".js-colorbox-text").colorbox({
-//     inline: true,
-//     maxWidth: "80%",
-//     maxHeight: "80%",
-//     opacity: 0.7,
-//   });
-// });
+jQuery(function ($) {
+  $(".js-colorbox-text").colorbox({
+    inline: true,
+    maxWidth: "80%",
+    maxHeight: "80%",
+    opacity: 0.7,
+  });
+});
