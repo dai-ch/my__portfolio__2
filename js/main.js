@@ -66,7 +66,7 @@
       event.preventDefault();
 
       // Colobox inlineHTMLのために削除
-      // event.stopPropagation();
+      //event.stopPropagation();
 
       const targetY =
         window.pageYOffset + target.getBoundingClientRect().top - headerHeight;
@@ -110,12 +110,11 @@ jQuery(function ($) {
   });
 });
 
-jQuery(function ($) {
-  $(".js-colorbox-text").colorbox({
-    inline: true,
-    maxWidth: "80%",
-    maxHeight: "80%",
-    opacity: 0.7,
-  });
-});
-
+// jQuery(function ($) {
+//   $(".js-colorbox-text").colorbox({
+//     inline: true,
+//     maxWidth: "80%",
+//     maxHeight: "80%",
+//     opacity: 0.7,
+//   });
+// });
