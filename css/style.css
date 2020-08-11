@@ -568,7 +568,8 @@ img {
 
 #top .profile__cover {
   width: 100%;
-  height: auto;
+  height: 40vw;
+  max-height: 280px;
 }
 
 #top .profile__cover img {
@@ -580,7 +581,7 @@ img {
 
 #top .profile__main {
   max-width: 450px;
-  margin: 15px auto 0;
+  margin: -55px auto 0;
 }
 
 #top .profile__imgbox {
@@ -870,10 +871,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  #top .profile__main {
-    max-width: 450px;
-    margin: -50px auto 0;
-  }
   #top .skills__list {
     margin-right: -1.5%;
     margin-left: -1.5%;
