@@ -117,8 +117,9 @@
 }
 
 #cboxLoadedContent {
-  background: #ddd;
+  background: #fff;
   padding: 15px;
+  width: 500px;
 }
 
 #cboxLoadingGraphic {
