@@ -379,6 +379,11 @@ img {
     }
   }
   h3 {
+    margin-top: 0.1em;
+    //color: $color-job-title;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5;
   }
   h4 {
   }
@@ -463,11 +468,17 @@ img {
     background-color: $color-bg;
   }
 
+  .skills__description {
+    margin-top: 1em;
+    text-align: center;
+  }
+
   .skills__list {
     display: flex;
     flex-wrap: wrap;
     margin-right: -2.5%;
     margin-left: -2.5%;
+    margin-top: 1em;
   }
 
   .skills__item {
@@ -617,6 +628,7 @@ img {
     //justify-content: center;
     //align-items: center;
     flex-wrap: wrap;
+    margin-top: 1em;
   }
 
   .works__item {
@@ -704,6 +716,7 @@ img {
       align-items: flex-start;
       margin-right: -2%;
       margin-left: -2%;
+      margin-bottom: 1em;
     }
     .works__item {
       width: calc(100% / 2);
@@ -751,7 +764,7 @@ img {
       margin-left: -1.5%;
     }
     .works__item {
-      width: calc(100% / 3);
+      width: calc(100% / 2);
 
       padding-right: 1.5%;
       padding-bottom: 3%;

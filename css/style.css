@@ -558,6 +558,13 @@ img {
   margin-top: 2.4rem;
 }
 
+.main h3 {
+  margin-top: 0.1em;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
 /*==================================================
 
 ** Top
@@ -618,6 +625,11 @@ img {
   background-color: #fcf2e9;
 }
 
+#top .skills__description {
+  margin-top: 1em;
+  text-align: center;
+}
+
 #top .skills__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,6 +638,7 @@ img {
       flex-wrap: wrap;
   margin-right: -2.5%;
   margin-left: -2.5%;
+  margin-top: 1em;
 }
 
 #top .skills__item {
@@ -778,6 +791,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 1em;
 }
 
 #top .works__item {
@@ -859,6 +873,7 @@ img {
             align-items: flex-start;
     margin-right: -2%;
     margin-left: -2%;
+    margin-bottom: 1em;
   }
   #top .works__item {
     width: calc(100% / 2);
@@ -889,7 +904,7 @@ img {
     margin-left: -1.5%;
   }
   #top .works__item {
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     padding-right: 1.5%;
     padding-bottom: 3%;
     padding-left: 1.5%;
