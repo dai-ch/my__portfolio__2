@@ -3,15 +3,15 @@
 ** スマホメニュー
 ==================================================*/
 (function () {
-  const body = document.querySelector("body");
-  const menuBtn = document.querySelector("#menu-btn");
-  const gnav = document.querySelector("#gnav");
-  const items = document.querySelectorAll("#gnav a");
-  const classToAssign = "is-open-gnav";
+  const body = document.querySelector('body');
+  const menuBtn = document.querySelector('#menu-btn');
+  const gnav = document.querySelector('#gnav');
+  const items = document.querySelectorAll('#gnav a');
+  const classToAssign = 'is-open-gnav';
 
   function manipulateGnav(e) {
     e.stopPropagation();
-    gnav.style.transition = "";
+    gnav.style.transition = '';
 
     if (body.classList.contains(classToAssign)) {
       body.classList.remove(classToAssign);
@@ -21,7 +21,7 @@
   }
 
   function closeGnav() {
-    gnav.style.transition = "none";
+    gnav.style.transition = 'none';
     body.classList.remove(classToAssign);
   }
 
@@ -31,9 +31,9 @@
     }
   }
 
-  menuBtn.addEventListener("click", manipulateGnav);
-  window.addEventListener("resize", fetchWindowWidth);
-  items.forEach((item) => item.addEventListener("click", closeGnav));
+  menuBtn.addEventListener('click', manipulateGnav);
+  window.addEventListener('resize', fetchWindowWidth);
+  items.forEach((item) => item.addEventListener('click', closeGnav));
 })();
 
 /*==================================================
@@ -42,7 +42,7 @@
 ==================================================*/
 (function () {
   const aHashes = document.querySelectorAll('a[href^="#"]');
-  const header = document.querySelector("#header");
+  const header = document.querySelector('#header');
   const duration = 300;
   let headerHeight;
 
@@ -59,14 +59,14 @@
   function move(event) {
     const currentY =
       document.documentElement.scrollTop || document.body.scrollTop;
-    const targetID = event.target.hash.replace(/#/, "");
+    const targetID = event.target.hash.replace(/#/, '');
     const target = document.getElementById(targetID);
 
     if (target) {
       event.preventDefault();
 
       // Colobox inlineHTMLのために削除
-      //event.stopPropagation();
+      event.stopPropagation();
 
       const targetY =
         window.pageYOffset + target.getBoundingClientRect().top - headerHeight;
@@ -91,10 +91,16 @@
     }
   }
 
-  window.addEventListener("load", fetchHeaderHeight);
-  window.addEventListener("resize", fetchHeaderHeight);
+  window.addEventListener('load', fetchHeaderHeight);
+  window.addEventListener('resize', fetchHeaderHeight);
   aHashes.forEach((a) =>
-    a.addEventListener("click", { event: a.target, handleEvent: move }, false)
+    a.addEventListener('click', (e) => {
+      // colorboxの要素の場合、スムーズスクロール無効
+      if (a.classList.contains('js-colorbox-target')) return;
+
+      // 通常時、スムーズスクロール実行
+      move(e);
+    }, false)
   );
 })();
 
@@ -103,19 +109,10 @@
 ** Colorbox
 ==================================================*/
 jQuery(function ($) {
-  $(".js-colorbox-img").colorbox({
-    maxWidth: "80%",
-    maxHeight: "80%",
+  $('.js-colorbox-target').colorbox({
+    maxWidth: '80%',
+    maxHeight: '80%',
     opacity: 0.7,
     inline: true,
   });
 });
-
-// $(function () {
-//   $(".inline").colorbox({
-//     inline: true,
-//     maxWidth: "90%",
-//     maxHeight: "90%",
-//     opacity: 0.7
-//   });
-// });

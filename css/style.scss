@@ -56,6 +56,12 @@ img {
   max-width: 1920px;
 }
 
+@include media(max, xs) {
+  .sp-none {
+    display: none;
+  }
+}
+
 // .btn {
 //   display: block;
 //   max-width: 280px;
@@ -206,6 +212,7 @@ img {
     font-size: 1.6rem;
     font-weight: 500;
     border-bottom: solid 2px $color-border;
+    text-transform: capitalize;
 
     a {
       display: block;
@@ -286,6 +293,7 @@ img {
 
   .footer-nav__item {
     color: $color-white;
+    text-transform: capitalize;
 
     + .footer-nav__item {
       margin-top: 0.8em;
@@ -391,6 +399,18 @@ img {
   }
   h6 {
   }
+
+  .sec-title {
+    &::before {
+      content: attr(data-sec-title);
+    }
+  }
+
+  .sec-title__sub {
+    font-size: 0.5em;
+    display: block;
+    color: $color-job-title;
+  }
 }
 
 @include media(min, sm) {
@@ -469,8 +489,14 @@ img {
     background-color: $color-bg;
   }
 
+  .skills--study {
+    .wrap--sec {
+      padding-top: 0;
+    }
+  }
+
   .skills__description {
-    margin-top: 1em;
+    // margin-top: 1em;
     text-align: center;
   }
 
@@ -479,7 +505,7 @@ img {
     flex-wrap: wrap;
     margin-right: -2.5%;
     margin-left: -2.5%;
-    margin-top: 1em;
+    margin-top: 2em;
   }
 
   .skills__item {
@@ -629,7 +655,6 @@ img {
     //justify-content: center;
     //align-items: center;
     flex-wrap: wrap;
-    margin-top: 1em;
   }
 
   .works__item {
