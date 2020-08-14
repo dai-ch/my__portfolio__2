@@ -93,25 +93,27 @@
 
 //   window.addEventListener('load', fetchHeaderHeight);
 //   window.addEventListener('resize', fetchHeaderHeight);
-//   aHashes.forEach((a) =>
-//     a.addEventListener('click', (e) => {
-//       // colorboxの要素の場合、スムーズスクロール無効
-//       if (a.classList.contains('js-colorbox-target')) return;
-
-//       // 通常時、スムーズスクロール実行
-//       move(e);
-//     }, false)
-//   );
+  // aHashes.forEach((a) =>
+  //   a.addEventListener('click', (e) => {
+  //     // colorboxの要素じゃない場合、
+  //     if (!a.classList.contains('js-colorbox-target')) {
+  //       // スムーズスクロール実行
+  //       move(e);
+  //     }
+  //   }, false)
+  // );
 // })();
 
-$(function () {
+jQuery(function ($) {
   $('a[href^="#"]').click(function () {
-    var speed = 500;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({ scrollTop: position }, speed, "swing");
-    return false;
+    if (!$(this).hasClass('js-colorbox-target')) {
+      var speed = 500;
+      var href = $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - $(header).height();
+      $("html, body").animate({ scrollTop: position }, speed, "swing");
+      return false;
+    }
   });
 });
 
