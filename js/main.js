@@ -40,69 +40,82 @@
 
 ** スムーズスクロール
 ==================================================*/
-(function () {
-  const aHashes = document.querySelectorAll('a[href^="#"]');
-  const header = document.querySelector('#header');
-  const duration = 300;
-  let headerHeight;
+//  (function () {
+//   const aHashes = document.querySelectorAll('a[href^="#"]');
+//   const header = document.querySelector('#header');
+//   const duration = 300;
+//   let headerHeight;
 
-  let Ease = {
-    easeInOut: (t) =>
-      t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-  };
+//   let Ease = {
+//     easeInOut: (t) =>
+//       t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+//   };
 
-  function fetchHeaderHeight() {
-    headerHeight = header.getBoundingClientRect().height;
-    return headerHeight;
-  }
+//   function fetchHeaderHeight() {
+//     headerHeight = header.getBoundingClientRect().height;
+//     return headerHeight;
+//   }
 
-  function move(event) {
-    const currentY =
-      document.documentElement.scrollTop || document.body.scrollTop;
-    const targetID = event.target.hash.replace(/#/, '');
-    const target = document.getElementById(targetID);
+//   function move(event) {
+//     const currentY =
+//       document.documentElement.scrollTop || document.body.scrollTop;
+//     const targetID = event.target.hash.replace(/#/, '');
+//     const target = document.getElementById(targetID);
 
-    if (target) {
-      event.preventDefault();
+//     if (target) {
+//       event.preventDefault();
 
-      // Colobox inlineHTMLのために削除
-      event.stopPropagation();
+//       // Colobox inlineHTMLのために削除
+//       event.stopPropagation();
 
-      const targetY =
-        window.pageYOffset + target.getBoundingClientRect().top - headerHeight;
-      const startTime = performance.now();
+//       const targetY =
+//         window.pageYOffset + target.getBoundingClientRect().top - headerHeight;
+//       const startTime = performance.now();
 
-      const loop = (nowTime) => {
-        const time = nowTime - startTime;
-        const normalizedTime = time / duration;
+//       const loop = (nowTime) => {
+//         const time = nowTime - startTime;
+//         const normalizedTime = time / duration;
 
-        if (normalizedTime < 1) {
-          window.scrollTo(
-            0,
-            currentY + (targetY - currentY) * Ease.easeInOut(normalizedTime)
-          );
-          requestAnimationFrame(loop);
-        } else {
-          window.scrollTo(0, targetY);
-        }
-      };
+//         if (normalizedTime < 1) {
+//           window.scrollTo(
+//             0,
+//             currentY + (targetY - currentY) * Ease.easeInOut(normalizedTime)
+//           );
+//           requestAnimationFrame(loop);
+//         } else {
+//           window.scrollTo(0, targetY);
+//         }
+//       };
 
-      requestAnimationFrame(loop);
+//       requestAnimationFrame(loop);
+//     }
+//   }
+
+//   window.addEventListener('load', fetchHeaderHeight);
+//   window.addEventListener('resize', fetchHeaderHeight);
+  // aHashes.forEach((a) =>
+  //   a.addEventListener('click', (e) => {
+  //     // colorboxの要素じゃない場合、
+  //     if (!a.classList.contains('js-colorbox-target')) {
+  //       // スムーズスクロール実行
+  //       move(e);
+  //     }
+  //   }, false)
+  // );
+// })();
+
+jQuery(function ($) {
+  $('a[href^="#"]').click(function () {
+    if (!$(this).hasClass('js-colorbox-target')) {
+      var speed = 500;
+      var href = $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - $(header).height();
+      $("html, body").animate({ scrollTop: position }, speed, "swing");
+      return false;
     }
-  }
-
-  window.addEventListener('load', fetchHeaderHeight);
-  window.addEventListener('resize', fetchHeaderHeight);
-  aHashes.forEach((a) =>
-    a.addEventListener('click', (e) => {
-      // colorboxの要素の場合、スムーズスクロール無効
-      if (a.classList.contains('js-colorbox-target')) return;
-
-      // 通常時、スムーズスクロール実行
-      move(e);
-    }, false)
-  );
-})();
+  });
+});
 
 /*==================================================
 
@@ -116,3 +129,4 @@ jQuery(function ($) {
     inline: true,
   });
 });
+
